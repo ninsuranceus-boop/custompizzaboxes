@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What Makes Custom Pizza Boxes Ideal for Takeout | The Burger Boxes</title>
+<meta name="description" content="Discover why custom pizza boxes are ideal for takeout — from heat retention and branding to durability and eco-friendly options. Order custom pizza boxes today." />
+<style>
+  :root {
+    --brand: #e63946;
+    --brand-dark: #b32d38;
+    --dark: #1d1d1d;
+    --light: #f8f8f8;
+    --muted: #666;
+    --radius: 12px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--dark);
+    background: #fff;
+  }
+
+  a { color: var(--brand); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ============ HEADER ============ */
+  header.blog-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+    border-bottom: 3px solid var(--brand);
+    flex-wrap: wrap;
+  }
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    animation: slideFade 1s ease-out both;
+  }
+
+  .logo-wrap img {
+    width: 70px;
+    height: auto;
+    animation: floatLogo 3s ease-in-out infinite;
+    filter: drop-shadow(0 4px 8px rgba(230,57,70,.25));
+  }
+
+  @keyframes floatLogo {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  @keyframes slideFade {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  h1.blog-title {
+    font-size: 1.6rem;
+    color: var(--dark);
+    animation: slideFade 1.2s ease-out both;
+  }
+
+  h1.blog-title span { color: var(--brand); }
+
+  /* ============ LAYOUT ============ */
+  .container {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 30px;
+  }
+
+  /* ============ STICKY MAP SIDEBAR ============ */
+  .sidebar {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+    height: fit-content;
+  }
+
+  .map-card {
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: box-shadow .3s ease, transform .3s ease;
+    cursor: grab;
+  }
+
+  .map-card:hover {
+    box-shadow: 0 12px 35px rgba(230,57,70,.25);
+    transform: translateY(-3px);
+  }
+
+  .map-card:active { cursor: grabbing; }
+
+  .map-card iframe {
+    display: block;
+    width: 100%;
+    height: 320px;
+    border: 0;
+  }
+
+  .map-card .map-caption {
+    padding: 12px 16px;
+    font-size: .85rem;
+    color: var(--muted);
+    text-align: center;
+    background: var(--light);
+    border-top: 2px solid var(--brand);
+  }
+
+  /* ============ ARTICLE ============ */
+  article.blog-content h2 {
+    color: var(--brand);
+    margin: 28px 0 12px;
+    font-size: 1.35rem;
+    border-left: 5px solid var(--brand);
+    padding-left: 12px;
+  }
+
+  article.blog-content p { margin-bottom: 16px; }
+
+  article.blog-content ul {
+    margin: 0 0 18px 22px;
+  }
+
+  article.blog-content li { margin-bottom: 8px; }
+
+  /* ============ KEYWORD LINKS ============ */
+  .kw-link {
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 6px;
+    transition: all .25s ease;
+    display: inline;
+  }
+
+  .kw-link.kw-1 { color: var(--brand); background: rgba(230,57,70,.10); }
+  .kw-link.kw-2 { color: #0a7d4f; background: rgba(10,125,79,.10); }
+  .kw-link.kw-3 { color: #1d4ed8; background: rgba(29,78,216,.10); }
+  .kw-link.kw-4 { color: #b45309; background: rgba(180,83,9,.10); }
+
+  .kw-link:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,.12);
+    filter: brightness(.95);
+  }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    display: inline-block;
+    padding: 14px 30px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all .3s ease;
+    border: 2px solid transparent;
+  }
+
+  .btn-contact {
+    background: var(--brand);
+    color: #fff;
+    margin: 22px 0;
+    box-shadow: 0 6px 18px rgba(230,57,70,.35);
+  }
+
+  .btn-contact:hover {
+    background: var(--brand-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(230,57,70,.45);
+    text-decoration: none;
+  }
+
+  .btn-insights {
+    background: transparent;
+    color: var(--brand);
+    border: 2px solid var(--brand);
+  }
+
+  .btn-insights:hover {
+    background: var(--brand);
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-3px);
+  }
+
+  /* ============ INSIGHT SECTION ============ */
+  .insight-section {
+    background: var(--light);
+    border-radius: var(--radius);
+    padding: 28px;
+    margin: 40px 0;
+    text-align: center;
+    border: 1px dashed var(--brand);
+  }
+
+  .insight-section h3 {
+    color: var(--brand);
+    margin-bottom: 10px;
+  }
+
+  .insight-section p { color: var(--muted); margin-bottom: 18px; }
+
+  /* ============ FOOTER ============ */
+  footer.site-footer {
+    background: var(--dark);
+    color: #ddd;
+    padding: 40px 30px 20px;
+    margin-top: 60px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-col h4 {
+    color: #fff;
+    margin-bottom: 14px;
+    border-bottom: 2px solid var(--brand);
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+
+  .footer-col p, .footer-col a {
+    color: #ccc;
+    font-size: .92rem;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .footer-col a:hover { color: var(--brand); }
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 18px;
+    font-size: .85rem;
+    color: #888;
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 900px) {
+    .container { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    header.blog-header { padding: 16px 20px; }
+    h1.blog-title { font-size: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="blog-header">
+  <div class="logo-wrap">
+    <img src="https://theburgerboxes.co.uk/wp-content/uploads/burger-boxes-logo.png" alt="The Burger Boxes Logo" />
+    <h1 class="blog-title">What Makes <span>Custom Pizza Boxes</span> Ideal for Takeout</h1>
+  </div>
+</header>
+
+<!-- ================= MAIN LAYOUT ================= -->
+<div class="container">
+
+  <!-- ===== LEFT: STICKY MAP ===== -->
+  <aside class="sidebar">
+    <div class="map-card" id="draggableMap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.5354615744423!2d-1.8640853!3d52.4875462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbb205f0bd81%3A0x4dfe212779e66efa!2sCustom%20Burger%20Boxes!5e0!3m2!1sen!2s!4v1792445595862!5m2!1sen!2s"
+        width="600" height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+      <div class="map-caption">📍 The Burger Boxes — Birmingham, UK</div>
+    </div>
+  </aside>
+
+  <!-- ===== RIGHT: BLOG CONTENT ===== -->
+  <article class="blog-content">
+
+    <p>When customers order pizza for delivery or pickup, the first impression often begins before the first bite — with the box. 
+    <a class="kw-link kw-1" href="https://theburgerboxes.co.uk/product/custom-pizza-boxes/" target="_blank" rel="noopener">Custom pizza boxes</a> 
+    are no longer just containers; they are a powerful branding tool, a freshness safeguard, and a key part of the takeout experience. 
+    In this guide, we explore exactly what makes them ideal for takeout and why 
+    <a class="kw-link kw-2" href="https://theburgerboxes.co.uk/" target="_blank" rel="noopener">custom packaging solutions</a> 
+    are becoming essential for pizzerias and restaurants.</p>
+
+    <h2>1. Superior Heat Retention & Freshness</h2>
+    <p>Pizza is at its best when it's hot and crisp. Custom pizza boxes are engineered with the right board thickness, 
+    venting, and grease-resistant lining to keep heat in while allowing steam to escape — preventing sogginess. 
+    If you're comparing packaging quality, explore 
+    <a class="kw-link kw-3" href="https://share.google/flk3fRoaVSMsEEI1g" target="_blank" rel="noopener">pizza box packaging insights</a> 
+    to see how material choice impacts freshness.</p>
+
+    <h2>2. Powerful Branding & Marketing</h2>
+    <p>Every takeout order becomes a walking billboard. Custom-printed boxes display your logo, colors, and social handles — 
+    turning each delivery into free brand exposure. Restaurants that invest in 
+    <a class="kw-link kw-4" href="https://theburgerboxes.co.uk/product/custom-pizza-boxes/" target="_blank" rel="noopener">printed pizza packaging</a> 
+    consistently report stronger brand recall and repeat orders.</p>
+
+    <h2>3. Durability & Protection</h2>
+    <p>Sturdy corrugated construction prevents crushing, keeps the pizza intact during transit, and stacks securely for 
+    delivery riders. Custom sizing ensures a snug fit, reducing movement and damage.</p>
+
+    <h2>4. Customer Trust & Professionalism</h2>
+    <p>A well-designed box signals quality and care. Customers associate custom packaging with professional restaurants — 
+    which directly influences reviews and word-of-mouth referrals. Learn more about 
+    <a class="kw-link kw-1" href="https://theburgerboxes.co.uk/" target="_blank" rel="noopener">food packaging excellence</a> 
+    and how it elevates your brand image.</p>
+
+    <h2>5. Eco-Friendly Options</h2>
+    <p>Modern custom pizza boxes can be made from recyclable, biodegradable, and compostable materials. 
+    Choosing sustainable packaging isn't just good for the planet — it's a selling point customers actively look for. 
+    Explore 
+    <a class="kw-link kw-3" href="https://theburgerboxes.co.uk/product/custom-pizza-boxes/" target="_blank" rel="noopener">eco-friendly custom boxes</a> 
+    for your business.</p>
+
+    <h2>6. Cost-Effective for Bulk Orders</h2>
+    <p>While custom boxes may have a slightly higher upfront cost, bulk ordering significantly reduces per-unit pricing. 
+    Combined with the marketing value of branded packaging, the ROI is compelling. See 
+    <a class="kw-link kw-2" href="https://share.google/flk3fRoaVSMsEEI1g" target="_blank" rel="noopener">bulk packaging solutions</a> 
+    tailored to your order volume.</p>
+
+    <h2>Conclusion</h2>
+    <p>Custom pizza boxes are ideal for takeout because they combine freshness protection, branding power, durability, 
+    and sustainability — all while building customer trust. Whether you run a small pizzeria or a multi-location chain, 
+    investing in custom packaging is a smart move. Ready to get started?</p>
+
+    <a class="btn btn-contact" href="https://theburgerboxes.co.uk/contact-us/" target="_blank" rel="noopener">
+      📞 Contact Us for Custom Pizza Boxes
+    </a>
+
+    <!-- ===== NEW INSIGHT SECTION ===== -->
+    <div class="insight-section">
+      <h3>Explore More Insights</h3>
+      <p>Discover expert tips, packaging trends, and industry guides on our blog.</p>
+      <a class="btn btn-insights" href="https://theburgerboxes.co.uk/our-blogs/" target="_blank" rel="noopener">
+        📚 Visit Our Blogs
+      </a>
+    </div>
+
+  </article>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <div class="footer-col">
+      <h4>The Burger Boxes</h4>
+      <p>Premium custom packaging solutions for burgers, pizza, and food businesses across the UK.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <a href="mailto:info@theburgerboxes.co.uk">info@theburgerboxes.co.uk</a>
+      <a href="mailto:sales@theburgerboxes.co.uk">sales@theburgerboxes.co.uk</a>
+      <a href="tel:+447782256871">+44 7782 256871</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <p>16 Duddeston Mill Rd, Saltley,<br>Birmingham B8 1AP, United Kingdom</p>
+      <p><strong>Monday – Friday:</strong> 24 Hours</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © <span id="year"></span> The Burger Boxes. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+  // Auto-update footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Make the map card draggable within the sidebar (moveable feel)
+  (function () {
+    const card = document.getElementById('draggableMap');
+    let isDown = false, startX, startY, origX = 0, origY = 0, curX = 0, curY = 0;
+
+    card.addEventListener('mousedown', (e) => {
+      // Don't start drag if clicking inside the iframe
+      if (e.target.tagName === 'IFRAME') return;
+      isDown = true;
+      startX = e.clientX - curX;
+      startY = e.clientY - curY;
+      card.style.transition = 'none';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      curX = e.clientX - startX;
+      curY = e.clientY - startY;
+      card.style.transform = `translate(${curX}px, ${curY}px)`;
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDown = false;
+      card.style.transition = 'transform .3s ease';
+    });
+  })();
+</script>
+
+</body>
+</html>
